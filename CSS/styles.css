@@ -18,7 +18,7 @@ body {
 }
 /* Хедер */
 .header-porfolio {
-
+    
     background-color: #ffffff;
     margin-left: auto;
     margin-right: auto;
@@ -100,8 +100,7 @@ body {
 .nav-link:hover.studia::before {opacity: 1;
 }
 
-.studia {transition:color  111250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+
 
 .studia::before {
        background: #2196F3;
@@ -113,6 +112,9 @@ body {
         border-radius: 2px;
         bottom: 0;
         opacity: 0;
+        transform: translatey(23px);
+        transition: opacity 250ms;
+        
         
 }
 .portfolio {transition: color 11250ms cubic-bezier(0.4, 0, 0.2, 1);}
@@ -126,6 +128,8 @@ body {
     border-radius: 2px;
     bottom: 0;
     opacity: 0;
+    transform: translateY(23px);
+    transition: opacity 250ms;
 }
 .nav-link:hover.portfolio::before {
     opacity: 1;
@@ -222,7 +226,9 @@ margin-right: auto;}
     border-color: transparent;
     padding: 10px 32px;
     margin-top: 30px;
-    cursor: pointer;}
+    cursor: pointer;
+    
+}
     
     
 .nav-button {
@@ -411,7 +417,9 @@ margin-bottom: 50px;}
 
 .site-contact {display:flex;
 gap: 50px;}
-.nav-link {display: block;
+.nav-link {
+position: relative;
+display: block;
 padding-top: 10px;
 padding-bottom: 10px;
 transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
